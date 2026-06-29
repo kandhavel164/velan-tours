@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kandhavel164.github.io/velan-tours/sitemap.xml
