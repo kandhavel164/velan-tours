@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Your Tour | Velan Tours & Travels</title>
+
+<meta name="description"
+content="Book your Tamil Nadu and Kerala tour packages with Velan Tours & Travels.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+<nav class="navbar">
+
+<div class="logo">
+<img src="images/logo.png" alt="Velan Tours Logo">
+
+<div>
+<h2>Velan Tours</h2>
+<p>& Travels</p>
+</div>
+
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="packages.html">Packages</a></li>
+<li><a href="vehicles.html">Vehicles</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" style="height:60vh;">
+<div class="hero-overlay">
+
+<div class="hero-content">
+
+<h1>Book Your Journey</h1>
+
+<p>
+Explore • Experience • Memories
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING FORM -->
+
+<section class="booking-section">
+
+<div class="section-title">
+<h2>Tour Booking Form</h2>
+<p>Fill the details and send your booking request</p>
+</div>
+
+<div class="booking-container">
+
+<form id="bookingForm">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" id="name" required>
+</div>
+
+<div class="form-group">
+<label>Mobile Number</label>
+<input type="tel" id="phone" required>
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" id="email">
+</div>
+
+<div class="form-group">
+<label>Select Package</label>
+
+<select id="package">
+
+<option>Ooty Package</option>
+<option>Kodaikanal Package</option>
+<option>Munnar Package</option>
+<option>Vagamon Package</option>
+<option>Alleppey Package</option>
+<option>Kerala Honeymoon</option>
+<option>Temple Tour</option>
+<option>Custom Package</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Select Vehicle</label>
+
+<select id="vehicle">
+
+<option>Sedan</option>
+<option>SUV</option>
+<option>Innova Crysta</option>
+<option>Tempo Traveller</option>
+<option>Mini Bus</option>
+<option>Tourist Bus</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Travel Date</label>
+<input type="date" id="date">
+</div>
+
+<div class="form-group">
+<label>Number of Passengers</label>
+<input type="number" id="persons" min="1">
+</div>
+
+<div class="form-group">
+<label>Special Requirements</label>
+<textarea id="message" rows="5"></textarea>
+</div>
+
+<button type="button"
+class="booking-btn"
+onclick="sendWhatsApp()">
+
+Book via WhatsApp
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- WHY BOOK WITH US -->
+
+<section class="why-us">
+
+<div class="section-title">
+
+<h2>Why Book With Us?</h2>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+<h3>Customized Tours</h3>
+
+<p>
+Flexible packages based on your needs.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-car-side"></i>
+
+<h3>Comfortable Vehicles</h3>
+
+<p>
+Premium vehicles for safe travel.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24/7 Support</h3>
+
+<p>
+Dedicated travel assistance.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>
+Let's Plan Your Dream Trip
+</h2>
+
+<p>
+Tamil Nadu • Kerala • Family Tours • Honeymoon Tours
+</p>
+
+<a href="contact.html" class="btn-primary">
+Contact Us
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+<h3>Velan Tours & Travels</h3>
+<p>Explore • Experience • Memories</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="packages.html">Packages</a><br>
+<a href="vehicles.html">Vehicles</a><br>
+<a href="contact.html">Contact</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>📞 +91 93604 72437</p>
+<p>📧 velantours@gmail.com</p>
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+© 2026 Velan Tours & Travels. All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/919360472437"
+class="whatsapp-btn">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="js/script.js"></script>
+<script>
+function sendWhatsApp() {
+
+    let name = document.getElementById("name").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let packageName = document.getElementById("package").value;
+    let vehicle = document.getElementById("vehicle").value;
+    let date = document.getElementById("date").value;
+    let persons = document.getElementById("persons").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    /* VALIDATION */
+
+    if (name === "") {
+        alert("Please enter your full name.");
+        document.getElementById("name").focus();
+        return;
+    }
+
+    if (phone === "") {
+        alert("Please enter your mobile number.");
+        document.getElementById("phone").focus();
+        return;
+    }
+
+    if (!/^[0-9]{10}$/.test(phone)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        document.getElementById("phone").focus();
+        return;
+    }
+
+
+    if (date === "") {
+        alert("Please select your travel date.");
+        document.getElementById("date").focus();
+        return;
+    }
+
+    if (persons === "" || Number(persons) < 1) {
+        alert("Please enter the number of passengers.");
+        document.getElementById("persons").focus();
+        return;
+    }
+
+    if (message === "") {
+        alert("Please enter your requirements.");
+        document.getElementById("message").focus();
+        return;
+    }
+
+    /* CREATE WHATSAPP MESSAGE */
+
+    let text =
+        "📌 Velan Tours & Travels Booking Request\n\n" +
+        "👤 Name: " + name + "\n" +
+        "📞 Phone: " + phone + "\n" +
+        "📧 Email: " + email + "\n" +
+        "🎒 Package: " + packageName + "\n" +
+        "🚗 Vehicle: " + vehicle + "\n" +
+        "📅 Travel Date: " + date + "\n" +
+        "👥 Passengers: " + persons + "\n" +
+        "📝 Requirements: " + message;
+
+    let url =
+        "https://wa.me/919360472437?text=" +
+        encodeURIComponent(text);
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
